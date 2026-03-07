@@ -1,10 +1,3 @@
-Here is the complete, perfectly formatted `README.md` updated with your official project name, **BorneoHarvest**.
-
-I have structured this exactly how top-tier open-source projects and hackathon winners format their documentation. It is clean, scannable, and highlights the exact technical achievements the judges will be looking for.
-
-Just copy everything inside the block below and paste it directly into your `README.md` file!
-
----
 
 ```markdown
 # 🌾 BorneoHarvest
