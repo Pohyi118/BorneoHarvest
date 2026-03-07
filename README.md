@@ -99,7 +99,4 @@ GEMINI_API_KEY="your_api_key_here"
 ```
 
 
-
-Would you like me to draft a high-impact, 3-minute pitch script that perfectly maps to these features for your presentation to the judges?
-
 ```
