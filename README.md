@@ -111,12 +111,12 @@ The dashboard is hard-coded to synchronize with the DisasterReports collection. 
 
 **Data Schema (Firestore Keys)**
 To ensure live synchronization, the following exact keys are used:
-* **Key:* title **Description:* The disaster type + emoji (e.g., "🚨 Banjir Kilat 🌊") **Data Type:* String
-* **Key:* description **Description:* Community-verified details or AI analysis notes **Data Type:* String
-* **Key:* location **Description:* GPS-derived city or district name **Data Type:* String
-* **Key:* time **Description:* Formatted date/time string of the occurrence **Data Type:* String
-* **Key:* imageBase64 **Description:* The actual field photo encoded for instant web display **Data Type:* String (Base64)
-* **Key:* timestamp **Description:* Exact millisecond time for chronological sorting **Data Type:* Number/Long
+* *Key:* title *Description:* The disaster type + emoji (e.g., "🚨 Banjir Kilat 🌊") *Data Type:* String
+* *Key:* description *Description:* Community-verified details or AI analysis notes *Data Type:* String
+* *Key:* location *Description:* GPS-derived city or district name *Data Type:* String
+* *Key:* time *Description:* Formatted date/time string of the occurrence *Data Type:* String
+* *Key:* imageBase64 *Description:* The actual field photo encoded for instant web display *Data Type:* String (Base64)
+* *Key:* timestamp *Description:* Exact millisecond time for chronological sorting *Data Type:* Number/Long
 
 🚀**Key Features for Pitching**
 * Live Handshake: Uses Firestore onSnapshot() listeners. When a farmer submits a report on the mobile app, it appears on the dashboard instantly without a page refresh.
@@ -128,9 +128,9 @@ To ensure live synchronization, the following exact keys are used:
 * Configure Firebase: Ensure the firebaseConfig object in the dashboard matches the Project ID: borneoharvest-adbe1.
 * Database Rules: Firestore security rules must allow public read/write for the duration of the hackathon:
 
-**JavaScript*
+```JavaScript
 allow read, write: if true;
-
+```
 **Deployment:** Open index.html in a browser to start the live monitoring feed.
 <p align="center">
 <i>Developed with ❤️ for the Borneo Hackathon 2026.</i>
