@@ -1,0 +1,14 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_bg">#121412</color>
+    <color name="card_dark">#1A211A</color>
+    <color name="jungle_green">#2D5A27</color>
+    <color name="text_gray">#A0AAB2</color>
+
+    <color name="alert_red_bg">#FFEBEE</color>
+    <color name="alert_red_text">#D32F2F</color>
+    <color name="alert_yellow_bg">#FFF9C4</color>
+    <color name="alert_yellow_text">#F57F17</color>
+    <color name="harvest_gold">#E1AD01</color>
+</resources>
