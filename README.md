@@ -111,7 +111,8 @@ The dashboard is hard-coded to synchronize with the DisasterReports collection. 
 
 **Data Schema (Firestore Keys)**
 To ensure live synchronization, the following exact keys are used:
-* *Key:* title *Description:* The disaster type + emoji (e.g., "🚨 Banjir Kilat 🌊") *Data Type:* String
+* *Key:* title
+  *Description:* The disaster type + emoji (e.g., "🚨 Banjir Kilat 🌊") *Data Type:* String
 * *Key:* description *Description:* Community-verified details or AI analysis notes *Data Type:* String
 * *Key:* location *Description:* GPS-derived city or district name *Data Type:* String
 * *Key:* time *Description:* Formatted date/time string of the occurrence *Data Type:* String
