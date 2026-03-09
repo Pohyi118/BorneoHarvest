@@ -45,6 +45,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
+        <activity android:name=".MatchResultsActivity" android:exported="false" />
     </application>
 </manifest>

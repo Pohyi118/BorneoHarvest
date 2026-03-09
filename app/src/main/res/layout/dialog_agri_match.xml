@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌾 Profil Agri-Match"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#2E7D32"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Tanaman Utama:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/etCropType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F5F5F5"
+        android:paddingHorizontal="12dp"
+        android:hint="Contoh: Nanas, Lada Hitam"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daerah/Lokasi:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/etDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F5F5F5"
+        android:paddingHorizontal="12dp"
+        android:hint="Contoh: Miri, Bau"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saiz Kebun (Hektar):"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/etFarmSize"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F5F5F5"
+        android:paddingHorizontal="12dp"
+        android:hint="Contoh: 2.5"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Simpan &amp; Aktifkan Padanan"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</LinearLayout>
