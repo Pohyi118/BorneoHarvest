@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway USSD Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-10 font-mono">
+    <h1 class="text-3xl text-green-400 mb-2">📡 Simulator Gateway USSD</h1>
+    <p class="text-gray-400 mb-8">Ini mensimulasikan isyarat dari telefon 2G (Nokia) di kawasan pedalaman tanpa internet.</p>
+
+    <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 max-w-md">
+        <p class="text-sm text-gray-400 mb-4">Simulasi Petani Dail: <strong class="text-white">*123*1# (Lapor Banjir)</strong></p>
+        
+        <button id="btnUssdFlood" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded transition-all">
+            Hantar Laporan USSD
+        </button>
+
+        <p id="status" class="text-green-400 mt-4 hidden">✅ Payload dihantar ke Firebase!</p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        // Your exact Firebase Config
+        const firebaseConfig = {
+            apiKey: "AIzaSyCrU2jqcg19Uls4K1-x8mQ9fB-uL4-PiJs",
+            authDomain: "borneoharvest-adbe1.firebaseapp.com",
+            projectId: "borneoharvest-adbe1",
+            storageBucket: "borneoharvest-adbe1.firebasestorage.app",
+            messagingSenderId: "821164721078",
+            appId: "1:821164721078:web:2750651b30b64e30773717"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        document.getElementById('btnUssdFlood').addEventListener('click', async () => {
+            const btn = document.getElementById('btnUssdFlood');
+            btn.innerText = "Menghantar...";
+            btn.disabled = true;
+
+            try {
+                // Formatting data exactly how your teammate's dashboard expects it
+                await addDoc(collection(db, "DisasterReports"), {
+                    title: "🚨 Laporan USSD: Banjir",
+                    description: "Sistem menerima isyarat SMS/USSD kod *123*1# dari telefon tanpa internet.",
+                    location: "Kawasan Pedalaman Borneo",
+                    time: new Date().toLocaleTimeString('ms-MY', { hour: '2-digit', minute: '2-digit' }),
+                    timestamp: serverTimestamp(),
+                    imageBase64: "NO_PHOTO", 
+                    reporter: "+60123456789"
+                });
+
+                document.getElementById('status').classList.remove('hidden');
+                btn.innerText = "Hantar Laporan USSD";
+                btn.disabled = false;
+                
+                setTimeout(() => document.getElementById('status').classList.add('hidden'), 3000);
+
+            } catch (e) {
+                console.error("Ralat: ", e);
+                alert("Gagal menghantar ke Firebase.");
+                btn.innerText = "Cuba Lagi";
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
