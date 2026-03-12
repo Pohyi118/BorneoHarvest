@@ -25,7 +25,7 @@ BorneoHarvest bridges the digital divide for rural agricultural communities. By 
 
 ## 📌 Hackathon Links
 * 🎥 **Demo Video:** [https://drive.google.com/file/d/1P5wowaaEFuWFeQNFkDthV5hClALlrCjs/view?usp=sharing]
-* 📄 **Project Report:** [https://docs.google.com/document/d/1klhvXUg6EAtDWCbDZtYCvu2w1kbAVsCBh0P_rQEB_mc/edit?usp=sharing]
+* 📄 **Project Report:** [https://drive.google.com/file/d/16PQjCGc3ri3OXQsEnE4TINtJLt7SNWyP/view?usp=sharing]
 
 ---
 
