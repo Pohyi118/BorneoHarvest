@@ -21,6 +21,14 @@ BorneoHarvest bridges the digital divide for rural agricultural communities. By 
 
 ---
 
+---
+
+## 📌 Hackathon Links
+* 🎥 **Demo Video:** [https://drive.google.com/file/d/1P5wowaaEFuWFeQNFkDthV5hClALlrCjs/view?usp=sharing]
+* 📄 **Project Report:** [https://docs.google.com/document/d/1klhvXUg6EAtDWCbDZtYCvu2w1kbAVsCBh0P_rQEB_mc/edit?usp=sharing]
+
+---
+
 ## ✨ Core Features
 
 ### 📸 1. AI Plant Doctor (Diagnosa Penyakit)
@@ -40,7 +48,12 @@ BorneoHarvest bridges the digital divide for rural agricultural communities. By 
 * **Real-Time Sync:** Uses Firestore Snapshot Listeners to mimic a high-tier Push Notification server. A new report instantly triggers Heads-Up Notifications, vibration, and Voice Alerts across all active devices in the community—**costing $0.00 in backend server fees.**
 
 ---
+### 🏛️ 4. Agri-Match Government Incentive Portal
+* **Bi-Directional Matching:** Moves beyond generic broadcasts by capturing a farmer's specific profile (crop type, district, farm size) to intelligently search a database of active agricultural incentives.
+* **Proactive Push Alerts:** Replaces static bulletin boards. The system is designed to alert farmers via Firebase Cloud Messaging (FCM) the moment a new state subsidy or bank micro-loan fits their exact profile.
+* **Audio-First Multi-Dialect Support:** Features an inclusive UI that bridges the language gap by simulating voice guidance in localized indigenous dialects (e.g., Iban, Kadazan-Dusun, Bidayuh) to help rural farmers navigate complex loan criteria.
 
+---
 ## 🏗️ "Offline-First" Architecture
 
 Rural areas often suffer from intermittent connectivity. BorneoHarvest is engineered with a strict **Offline-First** philosophy to prevent data loss and UI freezing:
@@ -100,7 +113,7 @@ GEMINI_API_KEY="your_api_key_here"
 
 ---
 
-🛡️ **SeedShield ASEAN: Command Center & Real-Time Backend**
+🛡️ ** Command Center & Real-Time Backend**
 This repository also contains the Government & NGO Command Center, a high-impact web dashboard designed for real-time disaster monitoring. It acts as the "Single Source of Truth," receiving live data from the SeedShield mobile application used by farmers in the field.
 
 🏗️**Technical Architecture**
